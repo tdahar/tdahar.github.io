@@ -1,0 +1,141 @@
+# Profile information
+name: Aleksandra Nenadic
+tagline: Techincal Training Manager, Software Sustanability Institute
+avatar: alex.png  #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+email: hello@webjeda.com
+phone: 012 345 6789
+website: 
+linkedin: aleksandra-nenadic-bb64b96
+github: anenadic
+gitlab:
+bitbucket:
+twitter: "aleks_nenadic"
+stack-overflow: # Number/Username, e.g. 123456/alandoe
+codewars:
+goodreads: # Number-Username, e.g. 123456-alandoe
+orcid: "0010-0042-2269-3894" #id part of ORCID e.g. https://orcid.org/0010-0042-2269-3894
+location: Manchester
+
+career-summary: |
+  Summarise your career here in a parahraph or two.
+
+work-experiences:
+  - role: Training Team Lead
+    time: 2016 - Present
+    company: Software Sustainability Institute, UK
+    intro: |
+      Summarise your experiences.
+    details: # Give more details about your responsibilities in the role.
+      - "Working to improve the provision and access to training in foundational computational and data management skills
+      for open and reproducible research for UK researchers by diffusion of a model of training based on pedagogical research
+      and principles of openness, inclusivity, accessibility and collaboration."
+      - "Engaging with UK Higher Education institutions and Doctoral Training Centres, projects and worldwide communities
+      involving research software training, providing them with consultancy, guidance and support around building capability
+      and capacity within their communities."
+      - "Helping build a computationally skilled researcher base in the UK by organising and teaching training workshops and
+      running instructor training."
+  - role: Technical Training Coordinator
+    time: 2014 - 2016
+    company: ELIXIR, EU Life Sciences Infrastructure Project
+    intro: |
+      Summarise your experiences.
+    details:
+      - Designed, project managed and co-developed TeSS training portal (Ruby on Rails) for browsing and automated discovery
+        of life sciences training resources
+      - Co-led the BioSchema standard and community for the development of Schema.org markup to structure online training resources in
+        life sciences
+
+education:
+  - degree: PhD in Computer Science (network security)
+    institution: University of Manchester, UK
+    time: 2002 - 2005
+    details:
+
+  - degree: BSc in Mathematics & Computer Science
+    institution: University of Belgrade, Serbia
+    time: 1995 - 1999
+    details:
+
+skills:
+  title: Skills # &amp; Proficiency
+  technical:
+    - name: Python & Django
+      level: 98%
+    - name: Javascript & jQuery
+      level: 98%
+    - name: Angular
+      level: 98%
+    - name: HTML5 & CSS
+      level: 95%
+    - name: Ruby on Rails
+      level: 85%
+    - name: Sketch & Photoshop
+      level: 60%
+  professional:
+    - name: Team player
+    - name: Effective communication
+    - name: Team player
+    - name: Strong problem solver
+    - name: Good time management
+
+projects:
+  title: Activities
+  intro: |
+    My various activities, either voluntary or as part of my roles, revolve around reproducibility, openness, transparency and
+    inclusivity in research. They mainly include project management, open leadership, growing open communities,
+    delivering training and organising events.
+  assignments:
+    - name: Carpentry community engagement
+      time: 2014 - present
+      link: "https://carpentries.org/"
+      details: |
+        Spreading the adoption of The Carpentries model of teaching, advocating and supporting institutions on becoming members
+        of The Carpentries community, recruiting more members into the community and training instructors to help grow the capacity.
+
+    - name: UK regional Carpentry workshop coordinator
+      time: 2016-present
+      link: "https://carpentries.org/regionalcoordinators/"
+      details: |
+        Advertising workshops, brokering between instructors and hosts, logging and analysis of
+        workshop data for impact analysis, providing first-line of support for the community."
+
+awards:
+  - name: Award Lorem Ipsum
+    detail: Microsoft lorem ipsum (2019)
+
+  - name: Award Donec Sodales
+    detail: Oracle Aenean (2017)
+
+languages:
+  - name: English
+    level: Native
+
+  - name: French
+    level: Professional
+
+  - name: Spanish
+    level: Professional
+
+interests:
+  - name: Climbing
+    link:
+
+  - name: Snowboarding
+    link:
+
+  - name: Cooking
+    link:
+
+publications:
+  title: Recent Publications
+  intro: |
+    You can list your publications in this section and give an introduction to your published work."
+
+  papers:
+    - title: "Ten simple rules for measuring the impact of workshops."
+      authors: "Sufi, S., Nenadic, A., Silva, R., Duckles, B., Simera, I., et al."
+      details: "PLOS Computational Biology 14(8):e1006191, 2018, https://doi.org/10.1371/journal.pcbi.1006191"
+
+    - title: "ELIXIR-UK role in bioinformatics training at the national level and across ELIXIR"
+      authors: "Larcombe, L., Hendricusdottir, R., Attwood, T. et al."
+      details: "F1000Research 6:952, 2017, https://doi.org/10.12688/f1000research.11837.1"

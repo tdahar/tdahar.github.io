@@ -1,0 +1,61 @@
+{% assign work-experiences = site.data.data.work-experiences %}
+<div class="resume-main col-12 col-lg-8 col-xl-9 pr-0 pr-lg-5">
+    {% if work-experiences %}
+    <section class="work-section py-3">
+        <h3 class="text-uppercase resume-section-heading mb-4">Work Experiences</h3>
+        {% for experience in work-experiences %}
+        <div class="item mb-3">
+            <div class="item-heading row align-items-center mb-2">
+                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0">{{ experience.role }}</h4>
+                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">{{ experience.company }} | {{ experience.time }}</div>
+            </div>
+            <div class="item-content">
+                <p>{{ experience.intro }}</p>
+                {% if experience.details %}
+                <ul class="resume-list">
+                    {% for detail in experience.details %}
+                    <li>{{ detail }}</li>
+                    {% endfor %}
+                </ul>
+                {% endif %}
+            </div>
+        </div><!--//item-->
+        {% endfor %}
+    </section><!--//work-section-->
+    {% endif %}
+
+    {% assign activities = site.data.data.projects %}
+    {% if activities %}
+    <section class="project-section py-3">
+        <h3 class="text-uppercase resume-section-heading mb-4">{{ activities.title }}</h3>
+        <div class="item-content"><p>{{ activities.intro }}</p></div>
+        {% for activity in activities.assignments %}
+        <div class="item mb-3">
+            <div class="item-heading row align-items-center mb-2">
+                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0"><a href={{activity.link}} target="_blank">{{activity.name}}</a></h4>
+                <div class="item-meta col-12 col-md-6 col-lg-4 text-muted text-left text-md-right">{{activity.time}}</div>
+            </div>
+            <div class="item-content">
+                <p>{{activity.details}}</p>
+            </div>
+        </div><!--//item-->
+        {% endfor %}
+    </section><!--//project-section-->
+    {% endif %}
+
+	{% assign extra-education = site.data.data.extra-education %}
+    {% if extra-education %}
+    <section class="project-section py-3">
+		<h3 class="text-uppercase resume-section-heading mb-4">Courses</h3>
+        {% for course in extra-education.courses %}
+        <div class="item mb-3">
+            <div class="item-heading row align-items-center mb-2">
+                <h4 class="item-title col-12 col-md-6 col-lg-8 mb-2 mb-md-0"><a href={{activity.link}} target="_blank">{{course.name}}</a></h4>
+            </div>
+        </div><!--//item-->
+        {% endfor %}
+    </section><!--//project-section-->
+    {% endif %}
+</div><!--//resume-main-->
+
+

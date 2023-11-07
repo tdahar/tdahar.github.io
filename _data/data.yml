@@ -1,0 +1,187 @@
+# Profile information
+name: Tarun Daryanani
+tagline: Junior Software Engineer, Spain
+avatar: tarun.png #place a 100x100 picture inside /assets/images/ folder and provide the name of the file below
+email: tarun.mdaryanani@gmail.com
+website: 
+linkedin: tarun-m-26455880/
+github: tdahar
+gitlab:
+bitbucket:
+twitter: "tarunhd"
+stack-overflow: # Number/Username, e.g. 123456/alandoe
+codewars:
+goodreads: # Number-Username, e.g. 123456-alandoe
+orcid:  #id part of ORCID e.g. https://orcid.org/0010-0042-2269-3894
+location: Barcelona, Spain
+
+career-summary: 
+
+  Junior Software Engineer with 3+ years of experience who is willing to learn and keep growing.<br>
+  My passion is to program and automate tasks and processes.<br>
+  At a professional level, I have worked in three different companies, with three different roles;
+  Infrastructure Engineer, IT Security Consultant and Research Engineer (which involved programming and data analysis). 
+
+  I prefer to work in a medium size team, big enough to share my ideas with a group of people, as well as learning from them, 
+  but small enough so I get to know the team. I consider myself autonomous enough to find the solutions on my own, 
+  but I like having someone in the team who is specialized in some technology. 
+
+
+work-experiences:
+  - role: Junior Software Engineer
+    time: Aug 2021 - May 2023
+    company: Barcelona SuperComputing Center, Spain
+    intro:
+    details: # Give more details about your responsibilities in the role.
+      - Implementation of tools using Go (<a href="https://github.com/migalabs">Migalabs Organization</a> | <a href="https://github.com/cortze/eth-cl-state-analyzer">Analyzer tool</a>)
+      - Store more than 1M rows in PostgreSQL
+      - Creation of RESTful APIs to serve data
+      - Use of Django to create back-end services
+      - Use of Git, Docker, SSH, Bash Scripts, Linux services, Firewalls
+      - Use of Python to analyze data (Jupyter Notebook, Pandas)
+      - Good understand of P2P networks
+      - Use of Prometheus and Grafana to monitor services and alerting
+
+
+  - role: IT Security Consultant
+    time: Aug 2019 - Aug 2021
+    company: Daimler Group Services Madrid, Spain
+    intro:
+    details:
+      - Good understanding of ISO 27001
+      - Good understanding of Software Development Life Cycle
+      - Review Security Audit reports (Pentesting, Architecture audits)
+      - Good understanding of IAM Policies
+      - Medium-High level use of Microsoft Excel
+      - Creating presentations and explaining managers security issues
+
+  - role: Global Video Platform Infrastructure Intern
+    time: Aug 2018 - Apr 2019
+    company: Telefonica i+D, Spain
+    intro:
+    details: 
+      - Participant of Talentum Scolarship
+      - Automating Software deployments with Github, Jenkins and Docker
+      - Provision and Deprovision of data through Linux servers
+
+education:
+  - degree: MSc in Security of Information Technologies
+    institution: Universitat Oberta de Cataluña, Barcelona, Spain
+    time: 2019 - 2020
+    details:
+
+  - degree: BSc in Computer Science
+    institution: University of La Laguna, Canary Islands, Spain
+    time: 2014 - 2019
+    details:
+
+skills:
+  title: Skills # &amp; Proficiency
+  technical:
+    - name: Programming languages
+      details: Python, Golang
+      level: 2 years
+    - name: Web standards and technologies
+      details: HTML/CSS/JS, JSON, TCP/IP, DNS, Firewall
+      level: 3 years
+    - name: Databases
+      details: mySQL, PostgresQL
+      level: 2 years
+    - name: Software engineering tools
+      details: virtual machines (VirtualBox, Docker), version control systems (Git, Jenkins)
+      level: 2 years
+    - name: Documentation
+      details: Markdown, HackMD
+      level: 3 years
+
+  professional:
+    - name: Team player
+    - name: Strong problem solver
+    - name: Effective verbal and written communication
+    - name: Excellent self & time management
+
+projects:
+  title: Github Projects
+  intro: |
+    During my educational and professional experience I have developed and participated in several open-source projects.
+  assignments:
+    - name: Ethereum Consensus Layer State Analyzer
+      time: 2022
+      link: "https://github.com/cortze/eth-cl-state-analyzer"
+      details: |
+        This repository was created to obtain on-chain data from the Ethereum network and persist metrics into a PostgreSQL
+        database for further and detailed analysis.
+
+    - name: Ethereum Consensus Layer Clients Deployment
+      time: 2022
+      link: "https://github.com/migalabs/eth2-clients-setup"
+      details: |
+        This repository was created to deploy several Ethereum Consensus Clients together with one simple command.
+
+    - name: Armiarma
+      time: 2021
+      link: "https://github.com/migalabs/armiarma"
+      details: |
+        Armiarma is an open-source p2p crawler that is able to identify the nodes participating in the network.
+
+    - name: Ethereum Consensus Layer Live Metrics
+      time: 2021
+      link: "https://github.com/migalabs/eth-cl-live-metrics"
+      details: |
+        This tool is able to retrieve live metrics from any self-hosted beacon node: block proposals, block arrivals and attestations collected.
+
+extra-education:
+  courses:
+    - name: IT Security (Universidad de LaLaguna)
+    - name: Python Basic Problem Solving (HackerRank)
+    - name: Basic Cloud Computing (Google Courses)
+
+# awards:
+#   - name: ILM Level 5 Award in Leadership & Management
+#     detail: 2019
+
+#   - name: Certified Carpentry Instructor Trainer
+#     detail: 2017
+    
+#   - name: Certified Software & Data Carpentry Instructor
+#     detail: 2015
+
+#   - name: Faculty of Mathematics, University of Belgrade, Award for Best Students
+#     detail: 2000
+
+languages:
+ - name: English
+   level: C1
+
+ - name: Spanish
+   level: Native
+
+interests:
+  - name: Cooking
+    detail: I have to so let's make it healthy, fun & tasty
+
+  - name: Reading books
+    detail: Not as much time to dedicate as I'd like
+
+  - name: Running
+    detail: Randomly
+
+  - name: Skiing
+    detail: When I get a chance
+  
+  - name: Rock Climbing
+    detail: When I get a chance
+
+# publications:
+#   title: Recent Publications
+#   intro: |
+#     You can list your publications in this section and give an introduction to your published work."
+
+#   papers:
+#     - title: "Ten simple rules for measuring the impact of workshops."
+#       authors: "Sufi, S., Nenadic, A., Silva, R., Duckles, B., Simera, I., et al."
+#       details: "PLOS Computational Biology 14(8):e1006191, 2018, https://doi.org/10.1371/journal.pcbi.1006191"
+
+#     - title: "ELIXIR-UK role in bioinformatics training at the national level and across ELIXIR"
+#       authors: "Larcombe, L., Hendricusdottir, R., Attwood, T. et al."
+#       details: "F1000Research 6:952, 2017, https://doi.org/10.12688/f1000research.11837.1"

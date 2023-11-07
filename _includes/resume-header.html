@@ -1,0 +1,55 @@
+{% assign profile = site.data.data %}
+{% if profile %}
+<div class="resume-header">
+    <div class="row align-items-center">
+        <div class="resume-title col-12 col-md-6 col-lg-8 col-xl-9">
+            <h2 class="resume-name mb-0 text-uppercase">{{ profile.name }}</h2>
+            <div class="resume-tagline mb-3 mb-md-0">{{ profile.tagline }}</div>
+        </div><!--//resume-title-->
+        <div class="resume-contact col-12 col-md-6 col-lg-4 col-xl-3">
+            <ul class="list-unstyled mb-0">
+                <!--                <li class="mb-2"><i class="fas fa-phone-square fa-fw fa-lg mr-2 "></i><a class="resume-link"-->
+                <!--                                                                                         href="tel:#">{{ profile.tagline }}</a>-->
+                <!--                </li>-->
+                {% if profile.email %}
+                <li class="mb-2"><i class="fas fa-envelope-square fa-fw fa-lg mr-2"></i><a class="resume-link"
+                                                                                           href="mailto:{{ profile.email }}">{{ profile.email }}</a>
+                </li>
+                {% endif %}
+                {% if profile.website %}
+                <li class="mb-2"><i class="fas fa-globe fa-fw fa-lg mr-2"></i><a class="resume-link" href="{{ profile.website }}" target="_blank">{{ profile.website }}</a>
+                </li>
+                {% endif %}
+                {% if profile.github %}
+                <li class="mb-2"><i class="fab fa-github-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="https://github.com/{{ profile.github }}" target="_blank">{{ profile.github }}</a></li>
+                {% endif %}
+                {% if profile.linkedin %}
+                <li class="mb-2"><i class="fab fa-linkedin fa-fw fa-lg mr-2"></i><a class="resume-link" href="https://www.linkedin.com/in/{{ profile.linkedin }}" target="_blank">{{ profile.linkedin }}</a></li>
+                {% endif %}
+                {% if profile.twitter %}
+                <li class="mb-2"><i class="fab fa-twitter-square fa-fw fa-lg mr-2"></i><a class="resume-link" href="https://www.twitter.com/{{ profile.twitter }}" target="_blank">@{{ profile.twitter }}</a></li>
+                {% endif %}
+                {% if profile.location %}
+                <li class="mb-2"><i class="fas fa-map-marker-alt fa-fw fa-lg mr-2" target="_blank"></i>{{ profile.location }}</li>
+                {% endif %}
+            </ul>
+        </div><!--//resume-contact-->
+    </div><!--//row-->
+
+</div><!--//resume-header-->
+
+<hr>
+<div class="resume-intro py-3">
+    <div class="media flex-column flex-md-row align-items-center">
+        {% if profile.avatar %}
+        <img class="resume-profile-image mb-3 mb-md-0 mr-md-5 ml-md-0 rounded mx-auto"
+             src="assets/images/{{profile.avatar}}" alt="image">
+        {% endif %}
+        {% if profile.career-summary %}
+        <div class="media-body text-left">
+            <p class="mb-0">{{ profile.career-summary }}</p>
+        </div><!--//media-body-->
+        {% endif %}
+    </div>
+</div><!--//resume-intro-->
+{% endif %}

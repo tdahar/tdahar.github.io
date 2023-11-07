@@ -1,0 +1,90 @@
+{% assign profile = site.data.data %}
+<aside class="resume-aside col-12 col-lg-4 col-xl-3 px-lg-4 pb-lg-4">
+	{% if profile.skills %}
+    <section class="skills-section py-3">
+        <h3 class="text-uppercase resume-section-heading mb-4">{{ profile.skills.title }}</h3>
+        {% assign technical_skills = profile.skills.technical %}
+        {% if technical_skills %}
+        <div class="item">
+            <h3 class="item-title">Technical</h3>
+            <ul class="list-unstyled resume-skills-list">
+                {% for skill in technical_skills %}
+                <li class="mb-2">
+					
+					<p class="font-weight-normal">
+						<b>{{ skill.name }}</b><br>
+						{{skill.details}}
+					</p>
+					
+					
+				</li>
+                {% endfor %}
+            </ul>
+        </div><!--//item-->
+        {% endif %}
+        {% assign professional_skills = profile.skills.professional %}
+        {% if professional_skills %}
+        <div class="item">
+            <h4 class="item-title">Professional</h4>
+            {% for skill in professional_skills %}
+            <ul class="list-unstyled resume-skills-list">
+                <li class="mb-2">{{ skill.name }}</li>
+            </ul>
+            {% endfor %}
+        </div><!--//item-->
+        {% endif %}
+    </section><!--//skills-section-->
+    {% if profile.education %}
+    <section class="education-section py-3">
+        <h3 class="text-uppercase resume-section-heading mb-4">Education</h3>
+        {% for education in profile.education %}
+        <ul class="list-unstyled resume-education-list">
+            <li class="mb-3">
+                <div class="resume-degree font-weight-bold">{{ education.degree }}</div>
+                <div class="resume-degree-org text-muted">{{ education.institution }}</div>
+                <div class="resume-degree-time text-muted">{{ education.time }}</div>
+            </li>
+        </ul>
+        {% endfor %}
+    </section><!--//education-section-->
+    {% endif %}
+    {% if profile.awards %}
+    <section class="education-section py-3">
+        <h3 class="text-uppercase resume-section-heading mb-4">Awards</h3>
+        {% for award in profile.awards %}
+        <ul class="list-unstyled resume-awards-list">
+            <li class="mb-3">
+                <div class="font-weight-bold">{{ award.name }}</div>
+                <div class="text-muted">{{ award.detail }}</div>
+            </li>
+        </ul>
+        {% endfor %}
+    </section><!--//awards-section-->
+    {% endif %}
+
+    {% endif %}
+    {% if profile.languages %}
+    <section class="skills-section py-3">
+        <h3 class="text-uppercase resume-section-heading mb-4">Languages</h3>
+        {% for language in profile.languages %}
+        <ul class="list-unstyled resume-lang-list">
+            <li class="mb-2">{{ language.name }} <span class="text-muted">({{ language.level }})</span></li>
+        </ul>
+        {% endfor %}
+    </section><!--//languages-section-->
+    {% endif %}
+    {% if profile.interests %}
+    <section class="skills-section py-3">
+        <h3 class="text-uppercase resume-section-heading mb-4">Interests</h3>
+        {% for interest in profile.interests %}
+        <ul class="list-unstyled resume-interests-list mb-0">
+            <li class="mb-3">
+                <div class="font-weight-bold">{{ interest.name }}</div>
+                <div class="text-muted">{{ interest.detail }}</div>
+            </li>
+        </ul>
+        {% endfor %}
+    </section><!--//interests-section-->
+    {% endif %}
+
+</aside><!--//resume-aside-->
